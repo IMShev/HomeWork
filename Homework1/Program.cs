@@ -1,0 +1,101 @@
+﻿// // программа, которая выводит квадрат числа
+// Console.Write("Введите число : ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Квадрат числа равен ");
+// Console.WriteLine(number*number);
+
+
+
+// //Программа, которая на вход принимает одно число N, а на выходе показывает все целые числа в промежутке от -N до N.
+
+// Console.Write("Введите число : ");
+// double num = Convert.ToDouble(Console.ReadLine());
+// double num1 = num - num*2; 
+// while (num >= num1)
+// {
+//     Console.WriteLine(num);
+//     num = num - 1;
+// }
+
+
+// //Программа, которая на вход принимает трехзначное число и на выходе показывает последнюю цифру этого числа
+
+// Console.Write("Введите трехзначное число : ");
+// int number3 = Convert.ToInt32(Console.ReadLine());
+
+// int numberLast = number3%10;
+
+// Console.Write("последняя цифра ");
+// Console.WriteLine(numberLast);
+
+
+
+// //Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+
+// Console.Write("Введите число 1 : ");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число 2 : ");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+// if (number1 > number2)
+// {
+//     Console.WriteLine("Первое число больше ");
+// }
+// else Console.WriteLine("Второе число больше ");
+    
+
+
+// // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+
+// Console.Write("Введите число 1 : ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число 2 : ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число 3 : ");
+// int c = Convert.ToInt32(Console.ReadLine());
+// int max = a;
+// if (a < b)
+// {
+//     max = b;
+//     if (b < c)
+//     {
+//         max = c;
+//     }
+// }
+// Console.Write("Максимальное число ");
+// Console.WriteLine(max);
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, 
+// является ли число чётным (делится ли оно на два без остатка).
+
+// Console.Write("Введите число : ");
+// int x = Convert.ToInt32(Console.ReadLine());
+// int ostatok = x%2;
+// if (ostatok > 0)
+// {
+//     Console.WriteLine("Число нечетное ");
+// }
+// else Console.WriteLine("Число четное ");
+    
+
+
+//Задача 8: Напишите программу, которая на вход принимает число N, а на выходе показывает все чётные числа от 1 до N.
+
+Console.Write("Введите число : ");
+int N = Convert.ToInt32(Console.ReadLine());
+int ost = N%2;
+while (N > 1)
+{
+    if (ost > 0)
+    {
+        int m = N-1;
+        Console.WriteLine(m);
+        m = m - 2;
+    }
+    else 
+        Console.WriteLine(N);
+        N = N - 2;   
+}
+
+
+

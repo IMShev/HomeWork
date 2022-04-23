@@ -81,21 +81,53 @@
 
 //Задача 8: Напишите программу, которая на вход принимает число N, а на выходе показывает все чётные числа от 1 до N.
 
-Console.Write("Введите число : ");
-int N = Convert.ToInt32(Console.ReadLine());
-int ost = N%2;
-while (N > 1)
-{
-    if (ost > 0)
-    {
-        int m = N-1;
-        Console.WriteLine(m);
-        m = m - 2;
-    }
-    else 
-        Console.WriteLine(N);
-        N = N - 2;   
-}
+// Console.Write("Введите число : ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int ost = N%2;
+// while (N > 1)
+// {
+//     if (ost > 0)
+//     {
+//         int m = N-1;
+//         Console.WriteLine(m);
+//         m = m - 2;
+//     }
+//     else 
+//         Console.WriteLine(N);
+//         N = N - 2;   
+// }
+
+
+// Задача семинара: Для случайного числа в диапазое от 100 до 1000 убрать вторую цифру и вывести первую и третью
+
+// int N = new Random().Next(100, 1000);
+// int digit1 = N % 10;
+// int digit2 = N / 100;
+// int newN = digit2 * 10 + digit1;
+// Console.WriteLine(N);
+// Console.WriteLine(newN);
+
+// //задача  семинара: проверить введенные числа на кратность, в противном случает вывести остаток
+
+// Console.Write("Введите число 1: ");
+// int nA = Convert.ToInt32(Console.ReadLine());
+
+// Console.Write("Введите число 2: ");
+// int nB = Convert.ToInt32(Console.ReadLine());
+
+// if (nA % nB == 0)
+//     Console.WriteLine("Кратно");
+// else 
+//     Console.WriteLine("Не кратно, остаток "+ nA%nB);
 
 
 
+// //задача семинара:  проверить введенное число на кратность 7 и 23
+// // синтаксис if
+// Console.Write("Введите число : ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// if ((n % 7 == 0) && (n % 23 == 0))
+//     Console.WriteLine("Это число делится на 7 и 23 ");
+// else
+//     Console.WriteLine("Это число НЕ делится на 7 и 23 ");

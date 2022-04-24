@@ -159,3 +159,115 @@
 //         return 4;
 //     return 0;
 // }
+
+
+
+
+// //  Задача семинара: ввести число N и вывести все квадраты чисел от 0 до N
+// Console.WriteLine("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int count = 1;
+// getSquare(n);
+// void getSquare(int n)
+// {
+//     while (count <= n)
+//     {
+//         int newn = count;
+//         count = count * count;
+//          Console.WriteLine(newn + " -> " + count);
+//         count = newn + 1;
+//     }
+// }
+
+
+
+
+
+// // Задача семинара: программа принимает на вход число N и выдает сумму чисел от 1 до N.
+
+// int Number;
+
+// Console.Write("Please, enter positive integer number: ");
+// while (!int.TryParse(Console.ReadLine(), out Number) || Number < 0)
+// {
+//     Console.WriteLine("Wrong input, try again!");
+//     Console.Write("Please, enter positive integer number: ");
+// }
+
+// int sum = 0;
+// for (int i = 1; i <= Number; i++)
+// {
+//     sum += i;
+// }
+
+// Console.WriteLine("Sum of all numbers from 1 to " + Number + " equal " + sum);
+
+
+
+// // Задача семинара: программа принимает на вход число N и выдает произведение чисел от 1 до N.
+
+// int Number;
+
+// Console.Write("Please, enter positive integer number: ");
+// while (!int.TryParse(Console.ReadLine(), out Number) || Number < 0)
+// {
+//     Console.WriteLine("Wrong input, try again!");
+//     Console.Write("Please, enter positive integer number: ");
+// }
+
+// int mult = 1;
+// for (int i = 1; i <= Number; i++)
+// {
+//     mult = mult*i;
+// }
+
+// Console.WriteLine("Multiply of all numbers from 1 to " + Number + " equal " + mult);
+
+
+
+// // Задача семинара: программа выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+
+// int[] array = new int[8];
+// Console.Write("[");
+// for (int i = 0; i <= array.Length - 1; i++)
+// {
+//     array[i] = new Random().Next(0, 2);
+//     Console.Write(array[i] + "  ");
+// }
+// Console.WriteLine("]");
+
+
+// // та же задача, но немного другой вывод с проверкой на первый и последний элементы
+// int[] array = new int[8];
+
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] = new Random().Next(0, 2);
+//     if (i==0)
+//         Console.Write("[" + array[i] + ", ");
+//     else if (i==array.Length-1)
+//         Console.WriteLine(array[i] + "]");
+//     else 
+//         Console.Write(array[i] + ", ");
+// }
+
+
+
+// // Задача семинара: программа считает сколько цифр в веденном числе (количество разрядов)
+
+// Console.WriteLine("Введите число: ");
+// int number;
+// while (!int.TryParse(Console.ReadLine(), out number))
+// {
+//     Console.WriteLine("неправильно! Введите число: ");
+// }
+// int count = 0;
+// int result = number;
+// if (result<0)
+// result = -1 * result;
+// while (result>0)
+// {
+//     result = result/10;
+//     count++;
+// }
+// Console.WriteLine(count);

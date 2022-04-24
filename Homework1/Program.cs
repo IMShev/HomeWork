@@ -131,3 +131,31 @@
 //     Console.WriteLine("Это число делится на 7 и 23 ");
 // else
 //     Console.WriteLine("Это число НЕ делится на 7 и 23 ");
+
+
+// // Задача семинара: ввести координаты точки и определить в каком квадранте она находится
+// Console.WriteLine("Введите координату X: ");
+// int x = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите координату Y: ");
+// int y = Convert.ToInt32(Console.ReadLine());
+
+// int q = getQuadrant(x, y);
+
+// if (q == 0)
+//     Console.WriteLine("Эта точка находится на оси");
+// else
+//     Console.WriteLine("Эта точка находится в квадранте № " + q);
+
+// int getQuadrant(int x, int y) // описание Метода поиска квадранта в котором находится точка
+// {
+//     if (x > 0 && y > 0)
+//         return 1;
+//     if (x < 0 && y > 0)
+//         return 2;
+//     if (x < 0 && y < 0)
+//         return 3;
+//     if (x > 0 && y < 0)
+//         return 4;
+//     return 0;
+// }
